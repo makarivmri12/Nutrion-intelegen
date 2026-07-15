@@ -1,0 +1,42 @@
+{
+  "build": {
+    "beforeBuildCommand": "npm run build",
+    "beforeDevCommand": "npm run dev",
+    "devPath": "http://localhost:3000",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "Nutri-Intelligence Platform",
+    "version": "2.4.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": true,
+      "fs": { "all": true },
+      "dialog": { "all": true },
+      "shell": { "all": true },
+      "notification": { "all": true }
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.nutriintel.platform",
+      "icon": [
+        "https://img.icons8.com/color/32/health-heart.png",
+        "https://img.icons8.com/color/128/health-heart.png"
+      ],
+      "resources": [],
+      "externalBin": [],
+      "copyright": "© 2026 Nutri-Intelligence",
+      "category": "Health",
+      "shortDescription": "Professional Nutrition Analysis",
+      "longDescription": "Comprehensive nutrition assessment and analysis platform with built-in linear programming optimizer.",
+      "deb": {
+        "depends": []
+      }
+    },
+    "security": {
+      "csp": null
+    }
+  }
+}

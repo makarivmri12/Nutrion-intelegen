@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Nutri-Intelligence Platform",
+  "description": "An advanced desktop-centric clinical nutrition analysis platform with spreadsheet input, real-time nutrient tracking, and intelligent AI dietary analysis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
