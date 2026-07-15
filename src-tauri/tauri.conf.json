@@ -1,0 +1,60 @@
+{
+  "build": {
+    "beforeBuildCommand": "npm run build",
+    "beforeDevCommand": "",
+    "devPath": "http://localhost:5173",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "Nutri-Intelligence Platform",
+    "version": "1.0.0"
+  },
+  "tauri": {
+    "bundle": {
+      "active": true,
+      "targets": ["msi", "dmg", "deb"],
+      "identifier": "com.nutriintel.platform",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "resources": [],
+      "externalBin": [],
+      "copyright": "Copyright © 2026 Nutri-Intelligence Platform",
+      "category": "Health",
+      "shortDescription": "Platform Asisten Nutrisi Klinis Modular",
+      "longDescription": "Platform modular berbasis kecerdasan buatan untuk mendukung keputusan klinis ahli gizi, asuhan nutrisi pasien terintegrasi, dan sinkronisasi data rekam medis."
+    },
+    "app": {
+      "security": {
+        "csp": null
+      },
+      "windows": [
+        {
+          "title": "Nutri-Intelligence Platform",
+          "width": 1280,
+          "height": 800,
+          "resizable": true,
+          "fullscreen": false,
+          "decorations": true,
+          "transparent": false,
+          "certificateThumbprint": null,
+          "digestAlgorithm": "sha256"
+        }
+      ]
+    },
+    "plugins": {
+      "updater": {
+        "active": true,
+        "dialog": true,
+        "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmktc2lnbnkgcHVibGljIGtleQpSV1R5YmU1UGk4SDBKMG1XQW1IeE0xckhKTEhVUWJ6V3A4OG11UFRxS1VvK09ZSHRjMWRUYTNoCg==",
+        "endpoints": [
+          "https://github.com/nutriintel/platform/releases/latest/download/updater.json"
+        ]
+      }
+    }
+  }
+}
